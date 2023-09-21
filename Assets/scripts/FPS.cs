@@ -11,6 +11,7 @@ public class FPSController : MonoBehaviour
     public float jumpPower = 7f;
     public float gravity = 10f;
 
+    public Inventory Inventory;
 
     public float lookSpeed = 2f;
     public float lookXLimit = 45f;
