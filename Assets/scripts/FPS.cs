@@ -77,4 +77,14 @@ public class FPSController : MonoBehaviour
 
         #endregion
     }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        IInventoryItem item = hit.collider.GetComponent<IInventoryItem>();
+        if (item != null)
+        {
+            Inventory.AddItem(item);
+        }
+
+    }
 }
